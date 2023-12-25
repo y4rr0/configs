@@ -15,7 +15,6 @@ if which fc-cache >/dev/null 2>&1 ; then
   fc-cache -f "$fontDir"
 fi
 
-dconf load /org/mate/terminal/profiles/profile0/ < $WDIR/mate-terminal/profile0.mtconf
-dconf load /org/mate/terminal/global/ < $WDIR/mate-terminal/global.mtconf
+dconf load /org/mate/terminal/profiles/ < $WDIR/mate-terminal/profile.mtconf
 
 # return to the previous working directory

@@ -27,6 +27,7 @@ fi
 
 if [ ! -d $WDIR/mate-terminal ]; then
   mkdir -p mate-terminal
+  wget https://raw.githubusercontent.com/y4rr0/configs/main/mate-terminal/profile.mtconf
 fi
 
 wget https://raw.githubusercontent.com/y4rr0/configs/main/user_init  --backups=1
