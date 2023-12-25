@@ -9,7 +9,7 @@ cp -af $WDIR/home/. $HOME
 
 fontDir="$HOME/.local/share/fonts"
 mkdir -p $fontDir
-cp "$HOME/my_data/fonts/*.ttf" $fontDir
+cp $HOME/my_data/fonts/*.ttf $fontDir/
 
 if which fc-cache >/dev/null 2>&1 ; then
   fc-cache -f "$fontDir"
