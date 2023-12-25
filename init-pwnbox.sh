@@ -17,6 +17,8 @@ fi
 
 if [ ! -d $WDIR/home ]; then
   mkdir -p home
+  wget https://raw.githubusercontent.com/y4rr0/configs/main/tmux/.tmux.conf
+  git clone https://github.com/tmux-plugins/tpm .tmux/plugins/tpm
   mkdir -p .ssh
   ssk-keygen -t rsa -f .ssh/id_rsa
 fi
