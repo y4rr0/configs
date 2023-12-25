@@ -12,7 +12,7 @@ if [ ! -d $WDIR/fonts ]; then
   wget  https://github.com/y4rr0/configs/raw/main/fira-code/FiraCode-Medium.ttf -O fonts/FiraCode-Medium.ttf
   wget  https://github.com/y4rr0/configs/raw/main/fira-code/FiraCode-Regular.ttf -O fonts/FiraCode-Regular.ttf
   wget  https://github.com/y4rr0/configs/raw/main/fira-code/FiraCode-Retina.ttf -O fonts/FiraCode-Retina.ttf
-  wget  https://github.com/y4rr0/configs/raw/main/fira-code/FiraCode-SemiBold.ttf -O FiraCode-SemiBold.ttf
+  wget  https://github.com/y4rr0/configs/raw/main/fira-code/FiraCode-SemiBold.ttf -O fonts/FiraCode-SemiBold.ttf
 fi
 
 if [ ! -d $WDIR/home ]; then
@@ -27,8 +27,9 @@ if [ ! -d $WDIR/mate-terminal ]; then
   mkdir -p mate-terminal
 fi
 
-wget https://raw.githubusercontent.com/y4rr0/configs/main/user_init.sh  --backups=1
+wget https://raw.githubusercontent.com/y4rr0/configs/main/user_init  --backups=1
 chmod +x user_init
+./user_init
 
 # return to the previous working directory
 cd $PREV_PWD
