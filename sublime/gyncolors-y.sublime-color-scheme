@@ -1,0 +1,49 @@
+{
+	"name": "GynColors-yarr0",
+	"globals":
+	{
+		"background": "#463B75",
+		"foreground": "#9387C2",
+		"caret": "#5ed378",
+		"selection": "#eeeeee",
+	},
+	"rules":
+	[
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"foreground": "#09cc13"
+		},
+		{
+			"name": "Keywords",
+			"scope": "keyword.control",
+			"foreground": "#bb9ede"
+		},
+		{
+			"name": "Preprocessor",
+			"scope": "meta.preprocessor | keyword.control.import",
+			"foreground": "#409090"
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"foreground": "#cfb296"
+		},
+		{
+			"name": "Numbers",
+			"scope": "storage.type | support.type",
+			"foreground": "#ff8bff"
+		},
+		{
+			"name": "Numbers",
+			"scope": "constant.numeric",
+			"foreground": "#f0ad6d"
+		},
+		{
+			"name": "Text and source",
+			"scope": "text | source",
+			"foreground": "#86c79b",
+			"background": "#1b1b33"
+		}
+	]
+}
